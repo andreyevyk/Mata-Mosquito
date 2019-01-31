@@ -3,10 +3,11 @@
    width: 50px;
 }
 .mosquito2{
-   height: 100px;
-   width: 100px;
+   height: 70px;
+   width: 70px;
+   transform: rotateX(-1)ç
 }
 .mosquito3{
-   height: 150px;
-   width: 150px;
+   height: 90px;
+   width: 90px;
 }
