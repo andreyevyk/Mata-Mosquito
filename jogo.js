@@ -2,6 +2,7 @@
 
 var altura = 0;
 var largura = 0;
+var vidas = 3;
 
 function ajustaTamanhoPalcoJogo(){
    altura = window.innerHeight;
@@ -13,12 +14,20 @@ function posicaoRandomica(){
 
    if(document.getElementById('mosquito')){
       document.getElementById('mosquito').remove();
+
+      document.getElementById('v'+vidas).src = 'img/coracao_vazio.png';
+
+      vidas--;
+
+      if(vidas==0){
+         alert('perdeu')
+      }
    }
 
    var posicaoX = Math.random()*largura;
    posicaoX = Math.floor(posicaoX) - 90;
    var posicaoY = Math.random()*altura;
-   posicaoY = Math.ceil(posicaoY) - 90;
+   posicaoY = (Math.floor(posicaoY) - 90)- document.getElementById('painel').clientHeight;
 
    if(posicaoX<0){
       posicaoX = 0;

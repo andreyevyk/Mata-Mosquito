@@ -3,6 +3,26 @@ body{
    background-image: url(img/bg.jpg);
    background-size: 100%;
 }
+.painel{
+   bottom: 0;
+   left: 0;
+   width: 190px;
+   padding: 10px;
+   background-color: #FFF;
+   border-top: 1px #fff;
+   opacity: 0.7;
+   position: absolute;
+}
+
+.cronometro{
+   float: left;   
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.vidas{
+   float: left;
+}
 
 .mosquito1{
    height: 50px;
