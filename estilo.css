@@ -1,3 +1,9 @@
+body{
+   overflow: hidden;
+   background-image: url(img/bg.jpg);
+   background-size: 100%;
+}
+
 .mosquito1{
    height: 50px;
    width: 50px;
@@ -9,4 +15,10 @@
 .mosquito3{
    height: 150px;
    width: 150px;
+}
+.ladoA{
+   transform: scaleX(1);
+}
+.ladoB{
+   transform: scaleX(-1);
 }
