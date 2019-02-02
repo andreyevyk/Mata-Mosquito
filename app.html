@@ -6,13 +6,12 @@
       <title>Document</title>
       <link rel="stylesheet" href="estilo.css">
       <script src="jogo.js"></script>
-
+      
    </head>
 
    <body onresize="ajustaTamanhoPalcoJogo()">
-
-      <div class="pontuacao" id="pontuacao">
-         Pontuação: <span id="pont">0</span>
+      <div class="pont"> 
+         Pontuação: <span id="pont"></span>
       </div>
 
 
@@ -36,6 +35,7 @@
          posicaoRandomica();
          
          var criarMosca = setInterval(function(){
+            console.log(criarMoscaTempo())
             posicaoRandomica()
          },criarMoscaTempo());
       </script>

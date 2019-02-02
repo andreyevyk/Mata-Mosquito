@@ -45,7 +45,7 @@ function posicaoRandomica(){
 
    if(document.getElementById('mosquito')){
       document.getElementById('mosquito').remove();
-      
+
       if(vidas>3){
          window.location.href = 'fimDeJogo.html?'+pontuacao;
       }else{
@@ -69,6 +69,8 @@ function posicaoRandomica(){
 
    var mosquito  = document.createElement('img');
    mosquito.src = 'img/mosca.png';
+
+   mosquito.id = 'mosquito';
    mosquito.className = tamanhoAleatorio();
    mosquito.className += ' ' + ladoAleatoria();
    mosquito.style.left = posicaoX + 'px';
