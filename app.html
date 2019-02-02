@@ -10,6 +10,13 @@
    </head>
 
    <body onresize="ajustaTamanhoPalcoJogo()">
+
+      <div class="pontuacao" id="pontuacao">
+         Pontuação: <span id="pont">0</span>
+      </div>
+
+
+
       <div class="painel" id="painel">
          <div class="vidas"> 
             <img id="v1" src="img/coracao_cheio.png" alt="">
@@ -19,13 +26,18 @@
          </div>
 
          <div class="cronometro">
-            Tempo restante ? 
+            Cronometro:
+            <span id="cronometro"></span>
          </div>
       </div>
 
       <script> 
+         document.getElementById('cronometro').innerHTML = tempo;
          posicaoRandomica();
-         setInterval(function(){posicaoRandomica()},2000)
+         
+         var criarMosca = setInterval(function(){
+            posicaoRandomica()
+         },criarMoscaTempo());
       </script>
    </body>
 

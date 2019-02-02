@@ -1,20 +1,35 @@
+html{
+   cursor: url('img/mata_mosca.png') 30 30, auto;
+}
+
 body{
    background-image: url(img/bg.jpg);
-   
    background-size: 100%;
+}
+.pontuacao{
+   position: absolute;
+   left: 45%;
+   width: 190px;
+   border-top: 1px #fff;
+   background-color: #fff;
+   padding: 10px;
+   padding-left: 15px;
+   opacity: 0.7;
+   font-size: 20px;
+   font-weight: bold
 }
 
 .mosquito1{
-   height: 50px;
-   width: 50px;
-}
-.mosquito2{
    height: 70px;
    width: 70px;
 }
-.mosquito3{
+.mosquito2{
    height: 90px;
    width: 90px;
+}
+.mosquito3{
+   height: 110px;
+   width: 110px;
 }
 .ladoA{
    transform: scaleX(1);
